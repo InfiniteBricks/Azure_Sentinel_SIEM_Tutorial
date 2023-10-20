@@ -20,11 +20,12 @@ Microsoft Azure services have changed since the video's creation on Nov. 2021. A
 
 - MS Azure (Free account for 12 month with a $200 account credit)
     - Windows 10 Pro Virtual Machine
-    - Log Analytics Workspace
-    - Microsoft Sentinel
+    - Log Analytics Workspace    
     - Data Collection Endpoint
     - Data Collection Rule
+    - Microsoft Defender for Cloud
     - Network Security Group
+    - Microsoft Sentinel
     - Azure Workbook
 - Remmina (Remote Desktop Client)
 - IP to GEO PowerShell Script (script provided by video creator)
@@ -47,8 +48,9 @@ The virtual machine(screen capture below) has no security defenses and is open/e
 <br>
 
 
+
  
-FINAL RESULT = The world map below shows the geolocations of the source ip addresses that attemped to login to the unprotected virtual machine. Locations = United States, South Africa, Australia, Vietnam, France, Russia and India<br> 
+FINAL RESULT = In Microsoft Sentinel the data from the failed_rdp.log is used to plot points on a world map as they happen. The screen capture below shows the geolocations of source ip addresses that attemped to login to the unprotected virtual machine. Login attempts from the United States, South Africa, Australia, Vietnam, France, Russia and India.<br> 
 <br>
 <img src="/images/world_map.png" alt="world_map_screenshot"/>
 <br>
