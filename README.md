@@ -36,7 +36,7 @@ Microsoft Azure services have changed since the video's creation on Nov. 2021. A
 - Linux Mint
 
 <br>
-<h2>Tutorial Overview:</h2>
+<h2>Tutorial Overview</h2>
 
 <p align="left">
  
@@ -46,15 +46,19 @@ The virtual machine(screen capture below) has no security defenses and is open/e
 <br>
 <br>
 <br>
-
-
-
  
 FINAL RESULT = In Microsoft Sentinel the data from the failed_rdp.log is used to plot points on a world map as they happen. The screen capture below shows the geolocations of source ip addresses that attemped to login to the unprotected virtual machine. Login attempts from the United States, South Africa, Australia, Vietnam, France, Russia and India.<br> 
 <br>
 <img src="/images/world_map.png" alt="world_map_screenshot"/>
 <br>
-<br>
-<br>
 
 </p>
+
+<br>
+<h2>Issues</h2>
+
+1st issues was with the task "Enable gathering VM logs in Security Center". In Azure 2023 Security Center is now MS Defender for Cloud and Pricing & Settings is now Environment Settings.
+
+2nd issue was with the task "Connect Log Analytics to VM". In Azure 2023 the method shown is being replaced with Azure Monitor and Azure Monitor Agent(AMA). Azure Monitor Agent runs on the virtual machine and a data collection rules(DCR) is setup in Log Analytics Workspace to connect to the AMA.
+
+3rd issue was with the task "Create custom fields/extract fields from raw custom log data". In Azure 2023 the method shown is replaced with Tables in Log Analytics Workspace.
