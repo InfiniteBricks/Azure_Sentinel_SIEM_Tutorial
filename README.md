@@ -3,11 +3,11 @@
 Azure Sentinel (SIEM) Tutorial - October 2023
 
  ### [Inspired by this YouTube video](https://www.youtube.com/watch?v=RoZeVbbZ0o0)
- Title:  SIEM Tutorial for Beginners | Azure Sentinel Tutorial MAP with LIVE CYBER ATTACKS!<br/>
- Creator: Josh Madakor<br/>
+ Title:  SIEM Tutorial for Beginners | Azure Sentinel Tutorial MAP with LIVE CYBER ATTACKS!<br>
+ Creator: Josh Madakor<br>
  Date of video: November 1, 2021
  
-</br>
+<br>
 <h2>Description</h2>
 
 "In this video, I setup Azure Sentinel (SIEM) and connect it to a live virtual machine acting as a honey pot. We will observe live attacks (RDP Brute Force) from all around the world. We will use a custom PowerShell script to look up the attackers Geolocation information and plot it on the Azure Sentinel Map! LEARN THIS IN DEPTH AND PUT THIS ON YOUR RESUME!" --Josh Madakor<br/>
@@ -15,7 +15,7 @@ Azure Sentinel (SIEM) Tutorial - October 2023
 
 Microsoft Azure services have changed since the video's creation on Nov. 2021. After a lot of RTFM and a few Stack Overflow searches, I was able to complete the tutorial and get the desired results.
 
-</br>
+<br>
 <h2>Applications, Languages, Services and Environments Used</h2>
 
 - MS Azure (Free account for 12 month with a $200 account credit)
@@ -34,22 +34,26 @@ Microsoft Azure services have changed since the video's creation on Nov. 2021. A
 - Firefox
 - Linux Mint
 
-</br>
+<br>
 <h2>Tutorial Overview:</h2>
 
 <p align="left">
  
-The virtual machine(screen capture below) has no security defenses and is open/exposed to the internet. The PowerShell script is monitoring the windows event logs for failed rdp login attempts(larger background window with the latitude & longitude values) and appending these to the custom failed_rdp.log(smaller foreground window with file highlighted) with the geolocation info from the ipgeolocation.io API. <br/>
+The virtual machine(screen capture below) has no security defenses and is open/exposed to the internet. The PowerShell script is monitoring the windows event logs for event ID 4625 which is a failed rdp login attempt(larger background window with the latitude & longitude values) and appends these to the custom failed_rdp.log(smaller foreground window with file highlighted) with the geolocation info from the ipgeolocation.io API. <br>
 
 <picture>
-<img src="/images/win10vm.jpeg" alt="win10vm_screenshot")
+<img src="/images/win10vm.jpeg" alt="win10vm_screenshot"/>
 </picture>
+<br>
+<br>
+<br>
 
-<br />
-<br />
-Select the disk:  <br/>
-<img src=""/>
-<br />
-<br />
+
+ 
+The map below shows the geolocation of the source ip that attemped to login to the unprotected virtual machine.<br>
+<img src="/images/" alt=""/>
+<br>
+<br>
+<br>
 
 </p>
