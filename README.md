@@ -40,18 +40,17 @@ Microsoft Azure services have changed since the video's creation on Nov. 2021. A
 <p align="left">
  
 The virtual machine(screen capture below) has no security defenses and is open/exposed to the internet. The PowerShell script is monitoring the windows event logs for event ID 4625 which is a failed rdp login attempt(larger background window with the latitude & longitude values) and appends these to the custom failed_rdp.log(smaller foreground window with file highlighted) with the geolocation info from the ipgeolocation.io API. <br>
-
-<picture>
-<img src="/images/win10vm.jpeg" alt="win10vm_screenshot"/>
-</picture>
+<br>
+<img src="/images/win10vm.png" alt="win10vm_screenshot"/>
 <br>
 <br>
 <br>
 
 
  
-The map below shows the geolocation of the source ip that attemped to login to the unprotected virtual machine.<br>
-<img src="/images/" alt=""/>
+FINAL RESULT = The world map below shows the geolocations of the source ip addresses that attemped to login to the unprotected virtual machine. Locations = United States, South Africa, Australia, Vietnam, France, Russia and India<br> 
+<br>
+<img src="/images/world_map.png" alt="world_map_screenshot"/>
 <br>
 <br>
 <br>
